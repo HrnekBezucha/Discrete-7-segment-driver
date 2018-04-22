@@ -2,6 +2,7 @@
 7-segment display driver with a discrete diode ROM
 
 Q: lolwtf?
+
 A: The matrix of diodes is hardwired memory.
    Each row is one word/byte with the 
    length of 7 bits. The circuit 'stores' data
