@@ -603,7 +603,7 @@ $EndComp
 Text Notes 4800 1950 0    60   ~ 0
 This is a diode ROM\nsimilar that was used in pioneers of\ncomputing. Look up "diode matrix"
 Text Notes 9650 2350 0    60   ~ 0
-Single digit\n7 segment display\nfrom discrete LEDs
+Single digit\n7 segment display\nfrom discrete LEDs\nThe power is voltage-limited\nto <10mA so there's no need\nfor resistor(s)\n(EEs will disagree)
 Text Notes 5900 2550 0    60   ~ 0
 ROM -\nrows are digits\ncolumns are segments
 Text Notes 4800 1300 0    60   ~ 0
@@ -1435,8 +1435,6 @@ F 3 "" H 10700 5900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 10700 5800
-Text Notes 7600 6600 0    100  ~ 0
-Add resistor\nTypical voltage to drop will be 2.2V for each LED\nso there's not much to do, just limit current.\n>10mA suggested.\nAnd rewire transistors
 Text Notes 1300 6900 0    60   ~ 0
 Q: lolwtf?\nA: The matrix of diodes is hardwired memory.\n   Each row is one word/byte with the \n   length of 7 bits. The circuit 'stores' data\n   for displaying a number on a 7 segment LED display\n   (hence 7 bit word)\n   I'll be making the memory and the display from\n   discrete diodes and the only chips are for\n   changing the address. Counting up at 1Hz frequency.\n   It would also work by putting logic HIGH on anode\n   of one of the leftmost diodes and get your output\n   on the bottom. That's where the display is wired.
 $EndSCHEMATC
