@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 68.58 63.424999 182.955001 157.555001)
     (thickness 1.6)
-    (drawings 89)
+    (drawings 90)
     (tracks 551)
     (zones 0)
     (modules 76)
@@ -3242,6 +3242,9 @@
     )
   )
 
+  (gr_text "TODO:\nMove chips above the display\nand save space" (at 93.98 134.62) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text g (at 175.26 125.73 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )

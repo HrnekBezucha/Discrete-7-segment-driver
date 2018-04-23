@@ -1437,4 +1437,6 @@ $EndComp
 Connection ~ 10700 5800
 Text Notes 1300 6900 0    60   ~ 0
 Q: lolwtf?\nA: The matrix of diodes is hardwired memory.\n   Each row is one word/byte with the \n   length of 7 bits. The circuit 'stores' data\n   for displaying a number on a 7 segment LED display\n   (hence 7 bit word)\n   I'll be making the memory and the display from\n   discrete diodes and the only chips are for\n   changing the address. Counting up at 1Hz frequency.\n   It would also work by putting logic HIGH on anode\n   of one of the leftmost diodes and get your output\n   on the bottom. That's where the display is wired.
+Text Notes 4550 5800 0    400  ~ 80
+It's\nbuggy\nrewiring\nis\nnecessary
 $EndSCHEMATC
