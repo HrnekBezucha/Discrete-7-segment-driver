@@ -449,23 +449,23 @@ $EndComp
 $Comp
 L D D47
 U 1 1 5ADB8642
-P 7150 4600
-F 0 "D47" H 7150 4700 50  0000 C CNN
-F 1 "D" H 7150 4500 50  0000 C CNN
-F 2 "Diodes_SMD:MiniMELF_Handsoldering" H 7150 4600 50  0001 C CNN
-F 3 "" H 7150 4600 50  0000 C CNN
-	1    7150 4600
+P 5550 4600
+F 0 "D47" H 5550 4700 50  0000 C CNN
+F 1 "D" H 5550 4500 50  0000 C CNN
+F 2 "Diodes_SMD:MiniMELF_Handsoldering" H 5550 4600 50  0001 C CNN
+F 3 "" H 5550 4600 50  0000 C CNN
+	1    5550 4600
 	-1   0    0    1   
 $EndComp
 $Comp
 L D D39
 U 1 1 5ADB86D0
-P 6750 4600
-F 0 "D39" H 6750 4700 50  0000 C CNN
-F 1 "D" H 6750 4500 50  0000 C CNN
-F 2 "Diodes_SMD:MiniMELF_Handsoldering" H 6750 4600 50  0001 C CNN
-F 3 "" H 6750 4600 50  0000 C CNN
-	1    6750 4600
+P 5150 4600
+F 0 "D39" H 5150 4700 50  0000 C CNN
+F 1 "D" H 5150 4500 50  0000 C CNN
+F 2 "Diodes_SMD:MiniMELF_Handsoldering" H 5150 4600 50  0001 C CNN
+F 3 "" H 5150 4600 50  0000 C CNN
+	1    5150 4600
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -515,12 +515,12 @@ $EndComp
 $Comp
 L D D34
 U 1 1 5ADB8AAD
-P 6350 5300
-F 0 "D34" H 6350 5400 50  0000 C CNN
-F 1 "D" H 6350 5200 50  0000 C CNN
-F 2 "Diodes_SMD:MiniMELF_Handsoldering" H 6350 5300 50  0001 C CNN
-F 3 "" H 6350 5300 50  0000 C CNN
-	1    6350 5300
+P 6750 5300
+F 0 "D34" H 6750 5400 50  0000 C CNN
+F 1 "D" H 6750 5200 50  0000 C CNN
+F 2 "Diodes_SMD:MiniMELF_Handsoldering" H 6750 5300 50  0001 C CNN
+F 3 "" H 6750 5300 50  0000 C CNN
+	1    6750 5300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -604,11 +604,11 @@ Text Notes 4800 1950 0    60   ~ 0
 This is a diode ROM\nsimilar that was used in pioneers of\ncomputing. Look up "diode matrix"
 Text Notes 9650 2350 0    60   ~ 0
 Single digit\n7 segment display\nfrom discrete LEDs\nThe power is voltage-limited\nto <10mA so there's no need\nfor resistor(s)\n(EEs will disagree)
-Text Notes 5900 2550 0    60   ~ 0
+Text Notes 5850 2550 0    60   ~ 0
 ROM -\nrows are digits\ncolumns are segments
 Text Notes 4800 1300 0    60   ~ 0
 ! WARNING !\nThis circuit is not physically checked \nit would be a pain to put all on \nbreadboard but a perfboard might \nbe a relatively ok
-Text Notes 7300 1600 0    60   ~ 0
+Text Notes 7500 1800 0    60   ~ 0
   --a--\n|        |\nf         b\n|        |\n --g--\n|        |\ne        c\n|        |\n --d--
 $Comp
 L PWR_FLAG #FLG01
@@ -766,7 +766,6 @@ Connection ~ 5700 3800
 Connection ~ 6100 3800
 Connection ~ 6100 4200
 Connection ~ 6500 4200
-Connection ~ 6900 4600
 Connection ~ 6900 4200
 Connection ~ 6900 3800
 Connection ~ 7300 3800
@@ -777,13 +776,12 @@ Connection ~ 4900 3200
 Connection ~ 4900 3800
 Connection ~ 4900 4200
 Connection ~ 7300 4200
-Connection ~ 7300 4600
 Connection ~ 7300 4900
 Connection ~ 7300 5300
 Connection ~ 6900 5600
 Connection ~ 6900 4900
 Connection ~ 6500 4900
-Connection ~ 6500 5300
+Connection ~ 6900 5300
 Connection ~ 6500 5600
 Connection ~ 6100 5300
 Connection ~ 6100 5600
@@ -816,12 +814,10 @@ Wire Wire Line
 	4600 5500 6600 5500
 Wire Wire Line
 	4600 5600 4600 5500
-Connection ~ 6200 5200
+Connection ~ 6600 5200
 Wire Wire Line
 	7000 5200 7000 5300
 Connection ~ 5800 5200
-Wire Wire Line
-	6200 5200 6200 5300
 Connection ~ 5400 5200
 Wire Wire Line
 	5800 5200 5800 5300
@@ -855,13 +851,6 @@ Wire Wire Line
 	4600 4800 7000 4800
 Wire Wire Line
 	4600 4900 4600 4800
-Connection ~ 6600 4500
-Wire Wire Line
-	7000 4500 7000 4600
-Wire Wire Line
-	6600 4500 6600 4600
-Wire Wire Line
-	4600 4500 7000 4500
 Wire Wire Line
 	4600 4600 4600 4500
 Connection ~ 6600 4100
@@ -1421,7 +1410,7 @@ Connection ~ 10700 4800
 Wire Wire Line
 	10700 5800 10500 5800
 Connection ~ 10700 5300
-Text Notes 8400 1700 0    60   ~ 0
+Text Notes 8600 1850 0    60   ~ 0
      abcdefg\n1 - 0110000\n2 - 1101101\n3 - 1111001\n4 - 0110011\n5 - 1011011\n6 - 1011111\n7 - 1110000\n8 - 1111111\n9 - 1111011\n0 - 1111110
 $Comp
 L GND #PWR011
@@ -1437,6 +1426,17 @@ $EndComp
 Connection ~ 10700 5800
 Text Notes 1300 6900 0    60   ~ 0
 Q: lolwtf?\nA: The matrix of diodes is hardwired memory.\n   Each row is one word/byte with the \n   length of 7 bits. The circuit 'stores' data\n   for displaying a number on a 7 segment LED display\n   (hence 7 bit word)\n   I'll be making the memory and the display from\n   discrete diodes and the only chips are for\n   changing the address. Counting up at 1Hz frequency.\n   It would also work by putting logic HIGH on anode\n   of one of the leftmost diodes and get your output\n   on the bottom. That's where the display is wired.
-Text Notes 4550 5800 0    400  ~ 80
-It's\nbuggy\nrewiring\nis\nnecessary
+Text Notes 7000 2550 0    60   ~ 0
+diode is 1\nno diode is 0
+Wire Wire Line
+	4600 4500 5400 4500
+Wire Wire Line
+	5400 4500 5400 4600
+Wire Wire Line
+	5000 4500 5000 4600
+Connection ~ 5000 4500
+Connection ~ 5700 4600
+Connection ~ 5300 4600
+Wire Wire Line
+	6600 5200 6600 5300
 $EndSCHEMATC
