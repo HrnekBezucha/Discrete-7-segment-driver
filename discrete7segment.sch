@@ -606,8 +606,6 @@ Text Notes 9650 2350 0    60   ~ 0
 Single digit\n7 segment display\nfrom discrete LEDs\nThe power is voltage-limited\nto <10mA so there's no need\nfor resistor(s)\n(EEs will disagree)
 Text Notes 5850 2550 0    60   ~ 0
 ROM -\nrows are digits\ncolumns are segments
-Text Notes 4800 1300 0    60   ~ 0
-! WARNING !\nThis circuit is not physically checked \nit would be a pain to put all on \nbreadboard but a perfboard might \nbe a relatively ok
 Text Notes 7500 1800 0    60   ~ 0
   --a--\n|        |\nf         b\n|        |\n --g--\n|        |\ne        c\n|        |\n --d--
 $Comp
