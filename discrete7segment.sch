@@ -37,7 +37,7 @@ encoding utf-8
 Sheet 1 1
 Title "Descrete ROM 7-segment driver"
 Date "2018-04-21"
-Rev ""
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
